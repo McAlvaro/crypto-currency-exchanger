@@ -5,12 +5,12 @@ import axios from 'axios';
 import SelectInputForm from './SelectInputForm.vue';
 import Info from './Info.vue';
 
-var currencyAmount = ref(1);
-var currency = ref("USD");
-var cryptoAmount = ref("0.00");
-var cryptoCurrency = ref("BTC");
-var price = ref(0);
-var image = ref("");
+const currencyAmount = ref(1);
+const currency = ref("USD");
+const cryptoAmount = ref("0.00");
+const cryptoCurrency = ref("BTC");
+const price = ref(0);
+const image = ref("");
 
 const currencies = ["USD", "EUR", "BS"];
 const cryptoCurrencies = ["BTC", "ETH", "SOL", "DOGE", "BNB", "USDT"];
