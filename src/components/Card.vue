@@ -37,12 +37,12 @@ onMounted(() => {
 <template>
     <div class="flex flex-col min-w-fit border rounded-lg shadow bg-blue-50 border-blue-300">
 
-        <div class="flex flex-row min-w-full">
+        <div class="flex flex-col md:flex-row min-w-full">
             <SelectInputForm v-model:currencyAmount="currencyAmount" v-model:currency="currency" :label="'From: '"
                 :options="currencies" @get-price="getPrice" />
-            <div class="flex flex-col justify-center relative leading-normal py-6 ">
+            <div class="flex flex-col justify-center items-center relative leading-normal py-2 md:py-6 ">
                 <Arrows
-                    class="w-8 h-8 mt-5 border border-blue-300 flex items-center justify-center bg-blue-50 rounded-full shadow-md" />
+                    class="w-8 h-8 md:mt-5 border border-blue-300 flex items-center justify-center bg-blue-50 rounded-full shadow-md" />
             </div>
             <SelectInputForm v-model:currencyAmount="cryptoAmount" v-model:currency="cryptoCurrency" :label="'To: '"
                 :options="cryptoCurrencies" @get-price="getPrice" />

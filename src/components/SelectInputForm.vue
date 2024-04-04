@@ -10,7 +10,7 @@ const currency = defineModel('currency');
 </script>
 <template>
 
-    <div class="flex flex-col justify-between p-6 leading-normal">
+    <div class="flex flex-col justify-between p-2 md:p-6 leading-normal">
         <p v-text="label"></p>
         <div class="flex">
             <label for="search-dropdown" class="mb-2 text-sm font-medium text-blue-500 sr-only">Currency</label>
