@@ -1,5 +1,6 @@
 <script setup>
 import Card from './components/Card.vue';
+import ReloadPrompt from './components/ReloadPrompt.vue';
 
 </script>
 
@@ -15,4 +16,5 @@ import Card from './components/Card.vue';
             <Card/>
         </div>
   </main>
+    <ReloadPrompt />
 </template>

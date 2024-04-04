@@ -13,7 +13,7 @@ const price = ref(0);
 const image = ref("");
 
 const currencies = ["USD", "EUR", "BS"];
-const cryptoCurrencies = ["BTC", "ETH", "SOL", "DOGE", "BNB", "USDT"];
+const cryptoCurrencies = ["BTC", "ETH", "SOL", "DOGE", "BNB", "USDT","SHIB"];
 
 async function getPrice() {
     const { data } = await axios.get(`https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${encodeURI(cryptoCurrency.value)}&tsyms=${encodeURI(currency.value)}`);
